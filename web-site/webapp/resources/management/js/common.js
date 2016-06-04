@@ -217,7 +217,7 @@
 
             $modalElement.removeClass("hide");
 
-            $modalElement.find(".close").click(function(){
+            $modalElement.find(".close-btn").click(function(){
                 $modalElement.addClass("hide");
                 $(".modal-cover").remove();
                 window.scrollHanlder.enableScroll();

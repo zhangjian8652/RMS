@@ -1,53 +1,100 @@
-/*
-Error: File to import not found or unreadable: user.
-        on line 3 of style.sass
+nav ul li {
+  list-style: none;
+  float: right; }
+  nav ul li a {
+    text-decoration: none; }
 
-1: @import "common"
-2: @import "dashboard"
-3: @import "user"
+div.overlay {
+  text-align: center;
+  line-height: 530px;
+  color: #00a65a; }
+  div.overlay i {
+    font-size: 140px; }
 
-Backtrace:
-style.sass:3
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:45:in `import'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:28:in `imported_file'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:37:in `css_import?'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
-D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
-D:/Ruby22-x64/bin/sass:23:in `load'
-D:/Ruby22-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: user.\A         on line 3 of style.sass\A \A 1: @import \"common\"\A 2: @import \"dashboard\"\A 3: @import \"user\""; }
+table thead th {
+  text-align: left; }
+table thead td {
+  text-align: left; }
+
+@media screen and (max-width: 960px) {
+  table thead th:first-child {
+    display: none; }
+  table thead th:first-child + th + th {
+    display: none; }
+  table tr td:first-child {
+    display: none; }
+  table tr td:first-child + td + td {
+    display: none; } }
+@media screen and (max-width: 767px) {
+  table thead th {
+    text-align: center; }
+  table thead th:first-child {
+    display: none; }
+  table thead th:first-child + th + th {
+    display: none; }
+  table thead th:first-child + th + th + th {
+    display: none; }
+  table thead th:first-child + th + th + th + th {
+    display: none; }
+  table tr td:first-child {
+    display: none; }
+  table tr td:first-child + td + td {
+    display: none; }
+  table tr td:first-child + td + td + td {
+    display: none; }
+  table tr td:first-child + td + td + td + td {
+    display: none; } }
+@media screen and (max-width: 320px) {
+  table thead th:first-child {
+    display: none; }
+  table thead th:first-child + th + th {
+    display: none; }
+  table thead th:first-child + th + th + th {
+    display: none; }
+  table thead th:first-child + th + th + th + th {
+    display: none; }
+  table tr td:first-child {
+    display: none; }
+  table tr td:first-child + td + td {
+    display: none; }
+  table tr td:first-child + td + td + td {
+    display: none; }
+  table tr td:first-child + td + td + td + td {
+    display: none; } }
+.modal-cover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  opacity: 0.6;
+  background-color: #fff; }
+
+.modal {
+  position: relative;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+  display: block;
+  background: transparent !important; }
+
+.modal-position {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  border-radius: 3px;
+  z-index: 10001; }
+
+header {
+  height: 40px;
+  width: 100%;
+  background-color: #101010;
+  margin: 0px;
+  vertical-align: middle; }
+
+#content .table-box {
+  min-height: 583px; }
+
+/*# sourceMappingURL=style.css.map */
